@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti Tourism - Accommodations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-gray-50 py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="text-blue-800 font-bold text-xl">LOGO</div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="home.html" class="text-gray-600 hover:text-blue-800"
+            >About</a
+          >
+          <a href="accommodations.html" class="text-blue-800 font-semibold"
+            >Stay</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-800">Eat</a>
+          <a href="activities.html" class="text-gray-600 hover:text-blue-800"
+            >Activities</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-800"
+            >Transportation</a
+          >
+          <a
+            href="weather-packing.html"
+            class="text-gray-600 hover:text-blue-800"
+            >Plan Your Trip</a
+          >
+        </nav>
+        <button class="md:hidden focus:outline-none">
+          <svg
+            class="h-6 w-6 text-blue-800"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="bg-blue-200 py-12">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-white text-center">
+          Accommodations
+        </h1>
+        <p class="text-xl text-white text-center mt-4 max-w-3xl mx-auto">
+          Find your perfect stay on Taniti Island, from luxury resorts to cozy
+          bed and breakfasts
+        </p>
+      </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="bg-white shadow-sm">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex flex-wrap gap-2">
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-50 focus:bg-blue-700 focus:text-white"
+          >
+            Hotel
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-50 focus:bg-blue-700 focus:text-white"
+          >
+            B&B
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-50 focus:bg-blue-700 focus:text-white"
+          >
+            Beach House
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-50 focus:bg-blue-700 focus:text-white"
+          >
+            Private Condo
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-50 focus:bg-blue-700 focus:text-white"
+          >
+            Price
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-50 focus:bg-blue-700 focus:text-white"
+          >
+            Rating
+          </button>
+          <button
+            class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+          >
+            Apply
+          </button>
+          <button
+            class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 ml-auto"
+          >
+            Map View
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accommodations Listings -->
+    <div class="container mx-auto px-4 py-8">
+      <!-- Listing 1 -->
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
+        <div class="md:flex">
+          <div
+            class="md:w-1/3 bg-blue-200 min-h-[200px] flex items-center justify-center"
+          >
+            <span class="text-white font-semibold text-xl">Hotel Image</span>
+          </div>
+          <div class="md:w-2/3 p-6">
+            <div class="flex flex-wrap justify-between items-start">
+              <div>
+                <h2 class="text-2xl font-bold text-gray-800">
+                  Four-Star Resort
+                </h2>
+                <p class="text-gray-600 mt-1">
+                  Luxury accommodations with ocean views
+                </p>
+              </div>
+              <div class="text-right mt-2 md:mt-0">
+                <div class="text-gray-800 font-bold">$$$$ | Rating: 4.5/5</div>
+                <p class="text-gray-600">Location: Yellow Leaf Bay</p>
+              </div>
+            </div>
+
+            <!-- Cancellation Policy -->
+            <div class="mt-4 bg-gray-50 p-3 rounded-md">
+              <p class="text-gray-700 text-sm">
+                <span class="font-semibold">Cancellation Policy:</span> Free
+                cancellation up to 48 hours before check-in
+              </p>
+            </div>
+
+            <div class="mt-4 flex flex-wrap justify-between items-center">
+              <div>
+                <a href="#" class="text-blue-700 hover:text-blue-900"
+                  >View Details</a
+                >
+                <span class="mx-2 text-gray-300">|</span>
+                <a href="#" class="text-blue-700 hover:text-blue-900"
+                  >Nearby Restaurants</a
+                >
+              </div>
+              <button
+                class="mt-2 md:mt-0 px-6 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition duration-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 2 -->
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
+        <div class="md:flex">
+          <div
+            class="md:w-1/3 bg-blue-200 min-h-[200px] flex items-center justify-center"
+          >
+            <span class="text-white font-semibold text-xl">B&B Image</span>
+          </div>
+          <div class="md:w-2/3 p-6">
+            <div class="flex flex-wrap justify-between items-start">
+              <div>
+                <h2 class="text-2xl font-bold text-gray-800">
+                  Island Breeze B&B
+                </h2>
+                <p class="text-gray-600 mt-1">
+                  Charming bed & breakfast with local character
+                </p>
+              </div>
+              <div class="text-right mt-2 md:mt-0">
+                <div class="text-gray-800 font-bold">$$ | Rating: 4.7/5</div>
+                <p class="text-gray-600">Location: Taniti City</p>
+              </div>
+            </div>
+
+            <!-- Cancellation Policy -->
+            <div class="mt-4 bg-gray-50 p-3 rounded-md">
+              <p class="text-gray-700 text-sm">
+                <span class="font-semibold">Cancellation Policy:</span> Free
+                cancellation up to 72 hours before check-in
+              </p>
+            </div>
+
+            <div class="mt-4 flex flex-wrap justify-between items-center">
+              <div>
+                <a href="#" class="text-blue-700 hover:text-blue-900"
+                  >View Details</a
+                >
+                <span class="mx-2 text-gray-300">|</span>
+                <a href="#" class="text-blue-700 hover:text-blue-900"
+                  >Nearby Restaurants</a
+                >
+              </div>
+              <button
+                class="mt-2 md:mt-0 px-6 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition duration-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listing 3 -->
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
+        <div class="md:flex">
+          <div
+            class="md:w-1/3 bg-blue-200 min-h-[200px] flex items-center justify-center"
+          >
+            <span class="text-white font-semibold text-xl"
+              >Beach House Image</span
+            >
+          </div>
+          <div class="md:w-2/3 p-6">
+            <div class="flex flex-wrap justify-between items-start">
+              <div>
+                <h2 class="text-2xl font-bold text-gray-800">
+                  Oceanfront Beach House
+                </h2>
+                <p class="text-gray-600 mt-1">
+                  Private beach access with stunning sunset views
+                </p>
+              </div>
+              <div class="text-right mt-2 md:mt-0">
+                <div class="text-gray-800 font-bold">$$$ | Rating: 4.8/5</div>
+                <p class="text-gray-600">Location: Northern Coast</p>
+              </div>
+            </div>
+
+            <!-- Cancellation Policy -->
+            <div class="mt-4 bg-gray-50 p-3 rounded-md">
+              <p class="text-gray-700 text-sm">
+                <span class="font-semibold">Cancellation Policy:</span> 50%
+                refund up to 7 days before check-in
+              </p>
+            </div>
+
+            <div class="mt-4 flex flex-wrap justify-between items-center">
+              <div>
+                <a href="#" class="text-blue-700 hover:text-blue-900"
+                  >View Details</a
+                >
+                <span class="mx-2 text-gray-300">|</span>
+                <a href="#" class="text-blue-700 hover:text-blue-900"
+                  >Nearby Restaurants</a
+                >
+              </div>
+              <button
+                class="mt-2 md:mt-0 px-6 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition duration-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map View Section -->
+    <div class="container mx-auto px-4 py-6">
+      <h2 class="text-2xl font-bold mb-6">Map View of Accommodations</h2>
+      <div class="bg-blue-100 p-6 rounded-lg shadow-sm">
+        <div class="bg-white h-96 rounded-lg flex items-center justify-center">
+          <div class="text-center">
+            <p class="text-gray-600 mb-3">
+              Interactive Map Showing All Accommodations
+            </p>
+            <p class="text-gray-500 text-sm">
+              This map displays all accommodation options and nearby restaurants
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Special Accommodation Packages -->
+    <div class="bg-gray-50 py-12 mt-8">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">
+          Special Accommodation Packages
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Honeymoon Package -->
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="bg-blue-50 p-6 border-b border-gray-200">
+              <h3 class="text-2xl font-bold text-blue-800">
+                Honeymoon Package
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Perfect for celebrating your special occasion
+              </p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span class="text-gray-700"
+                    >Luxury accommodation with ocean view</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span class="text-gray-700">Romantic welcome package</span>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span class="text-gray-700"
+                    >Private sunset dinner on the beach</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span class="text-gray-700"
+                    >Complimentary couple's massage</span
+                  >
+                </li>
+              </ul>
+              <button
+                class="w-full py-3 bg-blue-700 text-white rounded-md hover:bg-blue-800 transition duration-300"
+              >
+                View Honeymoon Packages
+              </button>
+            </div>
+          </div>
+
+          <!-- Extended Stay -->
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="bg-green-50 p-6 border-b border-gray-200">
+              <h3 class="text-2xl font-bold text-green-800">
+                Extended Stay Discount
+              </h3>
+              <p class="text-gray-600 mt-2">Stay longer and save more</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span class="text-gray-700"
+                    >15% discount on stays of 7+ nights</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span class="text-gray-700"
+                    >25% discount on stays of 14+ nights</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span class="text-gray-700">Free airport transfers</span>
+                </li>
+                <li class="flex items-start">
+                  <svg
+                    class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span class="text-gray-700"
+                    >Complimentary welcome basket</span
+                  >
+                </li>
+              </ul>
+              <button
+                class="w-full py-3 bg-green-700 text-white rounded-md hover:bg-green-800 transition duration-300"
+              >
+                View Extended Stay Options
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accommodation FAQs -->
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">
+        Frequently Asked Questions
+      </h2>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-3">
+            What types of accommodations are available on Taniti?
+          </h3>
+          <p class="text-gray-700">
+            Taniti offers a wide range of accommodations including luxury
+            resorts, family-owned hotels, bed and breakfasts, beach houses, and
+            private condos. All types of lodging are strictly regulated and
+            regularly inspected by the Tanitian government.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-3">
+            Do I need to book accommodations in advance?
+          </h3>
+          <p class="text-gray-700">
+            Yes, we recommend booking accommodations at least 3 months in
+            advance, especially during the high season (December-April). For
+            holiday periods and honeymoon packages, 6 months advance booking is
+            advised.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-3">
+            Are there family-friendly accommodations?
+          </h3>
+          <p class="text-gray-700">
+            Yes, many of our accommodations welcome families with children. Look
+            for the "Family-Friendly" tag in the listing details. These
+            properties often offer amenities like connecting rooms, children's
+            activities, and family meal options.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold mb-3">
+            What payment methods are accepted?
+          </h3>
+          <p class="text-gray-700">
+            Most accommodations accept major credit cards. Taniti uses the U.S.
+            dollar as its currency, but many businesses also accept euros and
+            yen. We recommend confirming payment options with your chosen
+            accommodation before arrival.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <div class="text-blue-800 font-bold text-xl mb-4">LOGO</div>
+            <p class="text-gray-600 max-w-xs">
+              Experience the beauty and adventure of Taniti Island, your perfect
+              tropical getaway in the Pacific.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Explore</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="home.html" class="hover:text-blue-800">About</a>
+                </li>
+                <li class="mb-2">
+                  <a href="accommodations.html" class="hover:text-blue-800"
+                    >Stay</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Eat</a>
+                </li>
+                <li class="mb-2">
+                  <a href="activities.html" class="hover:text-blue-800"
+                    >Activities</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Plan</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Transportation</a>
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >Weather</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >What to Pack</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >Plan Your Trip</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Accommodations</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Hotels & Resorts</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Bed & Breakfasts</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Beach Houses</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Private Condos</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Contact</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Email</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Phone</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">FAQ</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 mt-12 pt-8 text-sm text-gray-600 text-center"
+        >
+          © 2023 Taniti Tourism. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

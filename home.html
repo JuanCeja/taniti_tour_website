@@ -2,48 +2,640 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti Tourism - Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Taniti Tourism</title>
   </head>
-  <body>
-    <header class="bg-[#F1FAEE] shadow-md">
-      <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-        <div class="text-xl font-semibold text-[#457B9D]">LOGO</div>
-        <nav class="flex space-x-4">
-          <a href="#" class="text-[#2F2F2F] hover:text-[#457B9D]">About</a>
-          <a href="#" class="text-[#2F2F2F] hover:text-[#457B9D]">Stay</a>
-          <a href="#" class="text-[#2F2F2F] hover:text-[#457B9D]">Eat</a>
-          <a href="#" class="text-[#2F2F2F] hover:text-[#457B9D]">Activities</a>
-          <a href="#" class="text-[#2F2F2F] hover:text-[#457B9D]">Transportation</a>
-          <a href="#" class="text-[#2F2F2F] hover:text-[#457B9D]">Plan Your Trip</a>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-gray-50 py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="text-blue-800 font-bold text-xl">LOGO</div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="home.html" class="text-blue-800 font-semibold">About</a>
+          <a
+            href="accommodations.html"
+            class="text-gray-600 hover:text-blue-800"
+            >Stay</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-800">Eat</a>
+          <a href="activities.html" class="text-gray-600 hover:text-blue-800"
+            >Activities</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-800"
+            >Transportation</a
+          >
+          <a
+            href="weather-packing.html"
+            class="text-gray-600 hover:text-blue-800"
+            >Plan Your Trip</a
+          >
         </nav>
+        <button class="md:hidden focus:outline-none">
+          <svg
+            class="h-6 w-6 text-blue-800"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
       </div>
     </header>
 
-    <section class="w-full bg-[#A8DADC] h-80 flex items-center justify-center">
-      <div class="text-center text-white font-bold text-2xl">Hero Image/Slideshow</div>
-    </section>
-
-    <section class="w-full bg-[#F1FAEE] py-6">
-      <div class="max-w-screen-xl mx-auto flex flex-col items-center">
-        <div class="text-lg font-semibold text-[#2F2F2F] mb-4">Quick Booking Widget</div>
-        <div class="flex space-x-4">
-          <button class="bg-white border border-[#A8DADC] px-4 py-2 text-[#457B9D] hover:bg-[#A8DADC]">Check-in</button>
-          <button class="bg-white border border-[#A8DADC] px-4 py-2 text-[#457B9D] hover:bg-[#A8DADC]">Check-out</button>
-          <button class="bg-white border border-[#A8DADC] px-4 py-2 text-[#457B9D] hover:bg-[#A8DADC]">Guests</button>
-          <button class="bg-[#457B9D] text-white px-4 py-2 hover:bg-[#1D3557]">Search</button>
+    <!-- Hero Section -->
+    <div class="relative">
+      <div class="bg-blue-200 h-96 flex items-center justify-center">
+        <div class="text-center px-4">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Welcome to Taniti Island
+          </h1>
+          <p class="text-xl text-white mb-8">
+            Discover paradise with pristine beaches, lush rainforests, and
+            unforgettable adventures
+          </p>
+          <a
+            href="#booking-widget"
+            class="bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition duration-300"
+            >Plan Your Visit</a
+          >
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="w-full py-8 bg-[#F1FAEE]">
-      <div class="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <div class="bg-[#A8DADC] h-64 flex items-center justify-center text-white font-bold text-lg">Beaches</div>
-        <div class="bg-[#A8DADC] h-64 flex items-center justify-center text-white font-bold text-lg">Rainforest</div>
-        <div class="bg-[#A8DADC] h-64 flex items-center justify-center text-white font-bold text-lg">Volcano</div>
+    <!-- Booking Widget -->
+    <div id="booking-widget" class="container mx-auto px-4 py-8">
+      <div class="bg-white rounded-lg shadow-md -mt-10 relative z-10 p-6">
+        <h2 class="text-2xl font-bold mb-4 text-center">Quick Booking</h2>
+        <form class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <label
+              for="check-in"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Check-in</label
+            >
+            <input
+              type="date"
+              id="check-in"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label
+              for="check-out"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Check-out</label
+            >
+            <input
+              type="date"
+              id="check-out"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label
+              for="guests"
+              class="block text-sm font-medium text-gray-700 mb-1"
+              >Guests</label
+            >
+            <select
+              id="guests"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5+ Guests</option>
+            </select>
+          </div>
+          <div class="flex items-end">
+            <button
+              type="submit"
+              class="w-full bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition duration-300"
+            >
+              Search
+            </button>
+          </div>
+        </form>
       </div>
-    </section>
+    </div>
+
+    <!-- Featured Attractions -->
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">Experience Taniti</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Beaches -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold text-xl"
+              >Beautiful Beaches</span
+            >
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Pristine Beaches</h3>
+            <p class="text-gray-600 mb-4">
+              Relax on our white sandy beaches surrounding the stunning Yellow
+              Leaf Bay. Perfect for swimming, sunbathing, and creating
+              unforgettable memories.
+            </p>
+            <a href="#" class="text-blue-700 font-medium hover:text-blue-800"
+              >Explore our beaches →</a
+            >
+          </div>
+        </div>
+
+        <!-- Rainforest -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold text-xl"
+              >Lush Rainforests</span
+            >
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Tropical Rainforest</h3>
+            <p class="text-gray-600 mb-4">
+              Discover the island's lush rainforest interior through guided
+              hiking trails, zip-lining adventures, and wildlife watching
+              experiences.
+            </p>
+            <a href="#" class="text-blue-700 font-medium hover:text-blue-800"
+              >Explore the rainforest →</a
+            >
+          </div>
+        </div>
+
+        <!-- Volcano -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-300"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold text-xl">Active Volcano</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Active Volcano</h3>
+            <p class="text-gray-600 mb-4">
+              Experience the awe-inspiring beauty of Taniti's small active
+              volcano with guided tours to safe viewing areas offering
+              spectacular vistas.
+            </p>
+            <a href="#" class="text-blue-700 font-medium hover:text-blue-800"
+              >Discover the volcano →</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Taniti -->
+    <div class="bg-blue-50 py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold mb-6 text-center">
+            About Taniti Island
+          </h2>
+          <p class="text-gray-700 mb-4">
+            Taniti is a small, tropical island in the Pacific, spanning less
+            than 500 square miles. Despite its modest size, the island boasts
+            remarkable diversity in its landscapes – from pristine sandy and
+            rocky beaches to a protected harbor, lush rainforests, and a
+            mountainous interior featuring a small active volcano.
+          </p>
+          <p class="text-gray-700 mb-4">
+            Home to around 20,000 indigenous residents, Taniti's economy has
+            traditionally been centered around fishing and agriculture.
+            Recently, however, the island has seen growth in its tourism sector,
+            welcoming visitors from around the world to experience its natural
+            beauty and unique culture.
+          </p>
+          <div class="mt-8 text-center">
+            <a
+              href="#"
+              class="bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition duration-300"
+              >Learn More About Taniti</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Special Offers -->
+    <div class="container mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">Special Offers</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Honeymoon Package -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200"
+        >
+          <div class="bg-blue-100 p-6 border-b border-gray-200">
+            <h3 class="text-2xl font-bold text-blue-800">Honeymoon Package</h3>
+            <p class="text-gray-600 mt-2">
+              Create unforgettable memories with your special someone
+            </p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >5 nights at a luxury beachfront resort</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >Private sunset dinner on the beach</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >Couples massage at our island spa</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >Private island tour with local guide</span
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="block text-center bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition duration-300"
+              >View Package</a
+            >
+          </div>
+        </div>
+
+        <!-- Family Adventure -->
+        <div
+          class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200"
+        >
+          <div class="bg-green-100 p-6 border-b border-gray-200">
+            <h3 class="text-2xl font-bold text-green-800">Family Adventure</h3>
+            <p class="text-gray-600 mt-2">
+              Fun for the whole family with activities for all ages
+            </p>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >7 nights in a spacious family suite</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >Kid-friendly beach and wildlife activities</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >Guided easy rainforest trek for all ages</span
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-2 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >Cultural activities and local craft workshops</span
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="block text-center bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800 transition duration-300"
+              >View Package</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Essential Information -->
+    <div class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">
+          Essential Visitor Information
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Currency -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex items-center mb-4">
+              <svg
+                class="h-8 w-8 text-blue-600 mr-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <h3 class="text-xl font-bold">Currency</h3>
+            </div>
+            <p class="text-gray-700">
+              Taniti uses the U.S. dollar, but also accepts euros and yen. Major
+              credit cards are widely accepted, and several banks offer currency
+              exchange services.
+            </p>
+          </div>
+
+          <!-- Language -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex items-center mb-4">
+              <svg
+                class="h-8 w-8 text-blue-600 mr-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+                />
+              </svg>
+              <h3 class="text-xl font-bold">Language</h3>
+            </div>
+            <p class="text-gray-700">
+              Younger Tanitians often speak fluent English. In rural areas,
+              English is less common, especially among older residents. Our
+              hospital has multilingual staff.
+            </p>
+          </div>
+
+          <!-- Safety -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex items-center mb-4">
+              <svg
+                class="h-8 w-8 text-blue-600 mr-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+              <h3 class="text-xl font-bold">Safety</h3>
+            </div>
+            <p class="text-gray-700">
+              Violent crime is rare on Taniti. As tourism increases, petty theft
+              has become more common in tourist areas. The island has one
+              hospital and several clinics.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <a
+            href="weather-packing.html"
+            class="bg-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition duration-300"
+            >View All Visitor Information</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="max-w-3xl mx-auto bg-blue-50 rounded-lg p-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">Subscribe for Taniti Updates</h2>
+        <p class="text-gray-700 mb-6">
+          Get the latest news, travel tips, and exclusive offers delivered to
+          your inbox.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="flex-grow px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            type="submit"
+            class="bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition duration-300 whitespace-nowrap"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <div class="text-blue-800 font-bold text-xl mb-4">LOGO</div>
+            <p class="text-gray-600 max-w-xs">
+              Experience the beauty and adventure of Taniti Island, your perfect
+              tropical getaway in the Pacific.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Explore</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="home.html" class="hover:text-blue-800">About</a>
+                </li>
+                <li class="mb-2">
+                  <a href="accommodations.html" class="hover:text-blue-800"
+                    >Stay</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Eat</a>
+                </li>
+                <li class="mb-2">
+                  <a href="activities.html" class="hover:text-blue-800"
+                    >Activities</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Plan</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Transportation</a>
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >Weather</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >What to Pack</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >Plan Your Trip</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Special Packages</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Honeymoon</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Family</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Adventure</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Relaxation</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Contact</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Email</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Phone</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">FAQ</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 mt-12 pt-8 text-sm text-gray-600 text-center"
+        >
+          © 2023 Taniti Tourism. All rights reserved.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti Tourism - Activities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-gray-50 py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="text-blue-800 font-bold text-xl">LOGO</div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="home.html" class="text-gray-600 hover:text-blue-800"
+            >About</a
+          >
+          <a
+            href="accommodations.html"
+            class="text-gray-600 hover:text-blue-800"
+            >Stay</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-800">Eat</a>
+          <a href="activities.html" class="text-blue-800 font-semibold"
+            >Activities</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-800"
+            >Transportation</a
+          >
+          <a
+            href="weather-packing.html"
+            class="text-gray-600 hover:text-blue-800"
+            >Plan Your Trip</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <div class="bg-blue-200 h-64 flex items-center justify-center">
+      <h1 class="text-3xl font-bold text-white">Island Activities</h1>
+    </div>
+
+    <!-- Filters -->
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex flex-wrap items-center mb-6">
+        <span class="mr-4 font-semibold">Filter:</span>
+        <div class="flex flex-wrap gap-2">
+          <button
+            class="px-4 py-2 border border-blue-300 rounded bg-blue-700 text-white"
+          >
+            All Activities
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-100"
+          >
+            Nature
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-100"
+          >
+            Cultural
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded hover:bg-blue-100"
+          >
+            Water Activities
+          </button>
+          <button
+            class="px-4 py-2 border border-blue-300 rounded bg-green-100 hover:bg-green-200"
+          >
+            Family-Friendly
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activities Grid -->
+    <div class="container mx-auto px-4 py-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Activity Card 1 -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold">Volcano Tour</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Volcano Tour</h3>
+            <p class="text-gray-600 mb-3">
+              Explore Taniti's active volcano with our expert guides.
+            </p>
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-semibold">$85 per person</span>
+              <span
+                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium"
+              >
+                Ages 10+ recommended
+              </span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <span class="text-yellow-500">★★★★</span>
+                <span class="text-gray-400">★</span>
+                <span class="text-xs text-gray-500 ml-1">(245 reviews)</span>
+              </div>
+              <button
+                class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Card 2 -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold">Beach Day</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Beach Day</h3>
+            <p class="text-gray-600 mb-3">
+              Enjoy a relaxing day at Yellow Leaf Bay with all amenities
+              included.
+            </p>
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-semibold">$25 per person</span>
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium"
+              >
+                All ages welcome
+              </span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <span class="text-yellow-500">★★★★★</span>
+                <span class="text-xs text-gray-500 ml-1">(189 reviews)</span>
+              </div>
+              <button
+                class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Card 3 -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold">Rainforest Zip-line</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Rainforest Zip-line</h3>
+            <p class="text-gray-600 mb-3">
+              Experience the thrill of flying through the lush rainforest
+              canopy.
+            </p>
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-semibold">$95 per person</span>
+              <span
+                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium"
+              >
+                Ages 8+ recommended
+              </span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <span class="text-yellow-500">★★★★</span>
+                <span class="text-gray-400">★</span>
+                <span class="text-xs text-gray-500 ml-1">(312 reviews)</span>
+              </div>
+              <button
+                class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Card 4 -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold">Snorkeling Tour</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Snorkeling Tour</h3>
+            <p class="text-gray-600 mb-3">
+              Discover the colorful marine life in Taniti's crystal clear
+              waters.
+            </p>
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-semibold">$65 per person</span>
+              <span
+                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium"
+              >
+                Ages 6+ recommended
+              </span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <span class="text-yellow-500">★★★★★</span>
+                <span class="text-xs text-gray-500 ml-1">(156 reviews)</span>
+              </div>
+              <button
+                class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Card 5 -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold">Cultural Museum</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Cultural Museum</h3>
+            <p class="text-gray-600 mb-3">
+              Learn about Taniti's rich history and cultural heritage.
+            </p>
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-semibold">$12 per person</span>
+              <span
+                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium"
+              >
+                All ages welcome
+              </span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <span class="text-yellow-500">★★★★</span>
+                <span class="text-gray-400">★</span>
+                <span class="text-xs text-gray-500 ml-1">(98 reviews)</span>
+              </div>
+              <button
+                class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Card 6 -->
+        <div
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <div class="bg-blue-200 h-48 flex items-center justify-center">
+            <span class="text-white font-semibold">Fishing Charter</span>
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Fishing Charter</h3>
+            <p class="text-gray-600 mb-3">
+              Enjoy a day of fishing in the abundant waters around Taniti.
+            </p>
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-semibold">$120 per person</span>
+              <span
+                class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-medium"
+              >
+                Ages 10+ recommended
+              </span>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <span class="text-yellow-500">★★★★</span>
+                <span class="text-gray-400">★</span>
+                <span class="text-xs text-gray-500 ml-1">(87 reviews)</span>
+              </div>
+              <button
+                class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Family Activities Section -->
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-4">Kid-Friendly Activities</h2>
+      <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+        <p class="text-gray-700 mb-4">
+          Looking for activities the whole family can enjoy? Check out these
+          options perfect for visitors with children:
+        </p>
+        <ul class="list-disc pl-5 mb-4">
+          <li class="mb-2">Beach days with calm, shallow waters</li>
+          <li class="mb-2">Wildlife watching tours</li>
+          <li class="mb-2">Cultural demonstrations with hands-on activities</li>
+          <li class="mb-2">Guided nature walks (easy difficulty)</li>
+          <li class="mb-2">Marine life touch pools</li>
+        </ul>
+        <button
+          class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+        >
+          View All Family Activities
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-8 mt-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <div class="text-blue-800 font-bold text-xl mb-4">LOGO</div>
+            <p class="text-gray-600 max-w-xs">
+              Experience the beauty and adventure of Taniti Island.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Explore</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="home.html" class="hover:text-blue-800">About</a>
+                </li>
+                <li class="mb-2">
+                  <a href="accommodations.html" class="hover:text-blue-800"
+                    >Stay</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Eat</a>
+                </li>
+                <li class="mb-2">
+                  <a href="activities.html" class="hover:text-blue-800"
+                    >Activities</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Plan</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Transportation</a>
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >Weather</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >What to Pack</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="weather-packing.html" class="hover:text-blue-800"
+                    >Plan Your Trip</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-gray-800 font-semibold mb-3">Contact</h3>
+              <ul class="text-gray-600">
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Email</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Phone</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">FAQ</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="hover:text-blue-800">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 mt-8 pt-8 text-sm text-gray-600 text-center"
+        >
+          © 2023 Taniti Tourism. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
