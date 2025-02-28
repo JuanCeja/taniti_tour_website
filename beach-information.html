@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti Tourism - Beaches</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-gray-50 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-blue-800 font-bold text-xl">LOGO</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="home.html" class="text-gray-600 hover:text-blue-800">About</a>
+                <a href="accommodations.html" class="text-gray-600 hover:text-blue-800">Stay</a>
+                <a href="#" class="text-gray-600 hover:text-blue-800">Eat</a>
+                <a href="activities.html" class="text-gray-600 hover:text-blue-800">Activities</a>
+                <a href="transportation.html" class="text-gray-600 hover:text-blue-800">Transportation</a>
+                <a href="weather-packing.html" class="text-gray-600 hover:text-blue-800">Plan Your Trip</a>
+            </nav>
+            <button class="md:hidden focus:outline-none">
+                <svg class="h-6 w-6 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <div class="bg-blue-200 h-96 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Taniti's Beautiful Beaches</h1>
+                <p class="text-xl text-white mb-8">Discover pristine sandy shores, crystal clear waters, and unforgettable coastal experiences</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Beaches Introduction -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="text-3xl font-bold mb-6">Explore Our Beaches</h2>
+            <p class="text-lg text-gray-700">
+                Taniti is home to some of the Pacific's most stunning beaches, from the popular white sands of 
+                Yellow Leaf Bay to secluded coves only accessible by boat or trail. Each beach offers its own unique 
+                character and attractions, all surrounded by the island's natural beauty.
+            </p>
+        </div>
+
+        <!-- Beach Map -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-12">
+            <div class="p-6">
+                <h3 class="text-2xl font-bold mb-4">Beach Locations</h3>
+                <div class="bg-blue-50 h-72 rounded-lg flex items-center justify-center mb-4">
+                    <p class="text-gray-600 font-medium">Interactive Map of Taniti's Beaches</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 rounded-full bg-yellow-500 mr-2"></div>
+                        <span class="text-gray-700 text-sm">Swimming Beaches</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 rounded-full bg-blue-500 mr-2"></div>
+                        <span class="text-gray-700 text-sm">Snorkeling Spots</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 rounded-full bg-green-500 mr-2"></div>
+                        <span class="text-gray-700 text-sm">Surfing Areas</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 rounded-full bg-red-500 mr-2"></div>
+                        <span class="text-gray-700 text-sm">Beach Facilities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Beaches -->
+    <div class="bg-blue-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center">Featured Beaches</h2>
+            
+            <!-- Yellow Leaf Bay Beach -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-12">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-200 min-h-[300px] flex items-center justify-center">
+                        <span class="text-white font-semibold text-xl">Yellow Leaf Bay</span>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Yellow Leaf Bay Beach</h3>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">5.0 (328 reviews)</span>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                The most popular beach on Taniti, Yellow Leaf Bay features pristine white sand and 
+                                crystal-clear turquoise waters. The protected bay offers calm swimming conditions 
+                                perfect for families and beginner snorkelers.
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Beach Details</h4>
+                                <ul class="text-gray-700 space-y-1">
+                                    <li>• Type: White sand, calm waters</li>
+                                    <li>• Family-friendly: Yes</li>
+                                    <li>• Lifeguards: Yes (9am-5pm)</li>
+                                    <li>• Best time: Morning (less crowded)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Amenities</h4>
+                                <ul class="text-gray-700 space-y-1">
+                                    <li>• Restrooms and showers</li>
+                                    <li>• Beach chair/umbrella rentals</li>
+                                    <li>• Beachside dining options</li>
+                                    <li>• Water sports equipment rentals</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition duration-300">View Map</a>
+                            <a href="activities.html" class="px-4 py-2 border border-blue-700 text-blue-700 rounded hover:bg-blue-50 transition duration-300">Beach Activities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Coral Cove Beach -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-12">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/2 bg-blue-200 min-h-[300px] flex items-center justify-center">
+                        <span class="text-white font-semibold text-xl">Coral Cove</span>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Coral Cove Beach</h3>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">4.0 (246 reviews)</span>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                A snorkeler's paradise, Coral Cove is famous for its vibrant coral reefs teeming with colorful 
+                                tropical fish. The sheltered cove offers excellent visibility and is perfect for underwater 
+                                exploration. The beach itself is a mix of sand and small pebbles.
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Beach Details</h4>
+                                <ul class="text-gray-700 space-y-1">
+                                    <li>• Type: Mixed sand and pebbles</li>
+                                    <li>• Family-friendly: Yes (older children)</li>
+                                    <li>• Lifeguards: Seasonal only</li>
+                                    <li>• Best time: Midday (best visibility)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Amenities</h4>
+                                <ul class="text-gray-700 space-y-1">
+                                    <li>• Basic restrooms</li>
+                                    <li>• Snorkeling gear rentals</li>
+                                    <li>• Small café</li>
+                                    <li>• Guided snorkeling tours</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition duration-300">View Map</a>
+                            <a href="activities.html" class="px-4 py-2 border border-blue-700 text-blue-700 rounded hover:bg-blue-50 transition duration-300">Beach Activities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sunset Point Beach -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-200 min-h-[300px] flex items-center justify-center">
+                        <span class="text-white font-semibold text-xl">Sunset Point</span>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Sunset Point Beach</h3>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="ml-2 text-gray-600">4.9 (312 reviews)</span>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                True to its name, Sunset Point Beach offers spectacular sunset views that attract photographers 
+                                and romantics alike. This secluded stretch of golden sand is perfect for couples looking for a 
+                                more private beach experience. The western exposure creates dramatic evening vistas.
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Beach Details</h4>
+                                <ul class="text-gray-700 space-y-1">
+                                    <li>• Type: Golden sand, moderate waves</li>
+                                    <li>• Family-friendly: Moderate</li>
+                                    <li>• Lifeguards: No</li>
+                                    <li>• Best time: Late afternoon (sunset)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Amenities</h4>
+                                <ul class="text-gray-700 space-y-1">
+                                    <li>• Limited facilities</li>
+                                    <li>• Evening beach bar</li>
+                                    <li>• Photography spots</li>
+                                    <li>• Sunset dinner options</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition duration-300">View Map</a>
+                            <a href="activities.html" class="px-4 py-2 border border-blue-700 text-blue-700 rounded hover:bg-blue-50 transition duration-300">Beach Activities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Beach Activities -->
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8 text-center">Beach Activities</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Swimming -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="bg-blue-100 h-48 flex items-center justify-center">
+                    <span class="text-blue-800 font-semibold text-xl">Swimming</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3">Swimming</h3>
+                    <p class="text-gray-700 mb-4">
+                        Enjoy swimming in the crystal-clear waters of Taniti's beaches. Yellow Leaf Bay offers the calmest 
+                        conditions, perfect for families and leisurely swims in protected waters.
+                    </p>
+                    <div class="mt-6">
+                        <a href="activities.html" class="text-blue-700 font-medium hover:text-blue-900">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Snorkeling -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="bg-blue-100 h-48 flex items-center justify-center">
+                    <span class="text-blue-800 font-semibold text-xl">Snorkeling</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3">Snorkeling</h3>
+                    <p class="text-gray-700 mb-4">
+                        Discover the vibrant underwater world of Taniti's coral reefs. Coral Cove offers the best snorkeling 
+                        with equipment rentals available onsite. Guided tours are also available.
+                    </p>
+                    <div class="mt-6">
+                        <a href="activities.html" class="text-blue-700 font-medium hover:text-blue-900">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Beach Volleyball -->
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="bg-blue-100 h-48 flex items-center justify-center">
+                    <span class="text-blue-800 font-semibold text-xl">Beach Volleyball</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3">Beach Volleyball</h3>
+                    <p class="text-gray-700 mb-4">
+                        Join in a game of beach volleyball at Yellow Leaf Bay's dedicated courts. Equipment is available 
+                        for rent, and weekly tournaments are organized during high season.
+                    </p>
+                    <div class="mt-6">
+                        <a href="activities.html" class="text-blue-700 font-medium hover:text-blue-900">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Beach Safety -->
+    <div class="bg-blue-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Beach Safety Information</h2>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <svg class="h-6 w-6 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            Safety Guidelines
+                        </h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Always swim in designated areas with lifeguards when possible</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Check beach flags and warning signs before entering the water</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Apply reef-safe sunscreen regularly and wear sun protection</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Stay hydrated and be aware of heat exhaustion symptoms</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Never swim alone or under the influence of alcohol</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <svg class="h-6 w-6 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Beach Flag System
+                        </h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 bg-green-500 mr-3 mt-0.5"></div>
+                                <div>
+                                    <span class="font-semibold">Green Flag:</span>
+                                    <span class="block text-sm">Low hazard, calm conditions, safe to swim</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 bg-yellow-500 mr-3 mt-0.5"></div>
+                                <div>
+                                    <span class="font-semibold">Yellow Flag:</span>
+                                    <span class="block text-sm">Medium hazard, moderate surf or currents</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 bg-red-500 mr-3 mt-0.5"></div>
+                                <div>
+                                    <span class="font-semibold">Red Flag:</span>
+                                    <span class="block text-sm">High hazard, strong currents, high surf</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 bg-purple-500 mr-3 mt-0.5"></div>
+                                <div>
+                                    <span class="font-semibold">Purple Flag:</span>
+                                    <span class="block text-sm">Dangerous marine life (jellyfish, etc.)</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <p class="text-blue-800 font-medium">
+                        In case of emergency, call Taniti Emergency Services at <span class="font-bold">555-1234</span> or notify the nearest lifeguard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Beach FAQs -->
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+        
+        <div class="max-w-3xl mx-auto space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-bold mb-3">Which beach is best for families with young children?</h3>
+                <p class="text-gray-700">
+                    Yellow Leaf Bay is the most family-friendly beach on Taniti. It features calm, shallow waters, 
+                    lifeguards on duty, full amenities including restrooms and showers, and easy access to food 
+                    and refreshments. The soft white sand is also ideal for sandcastle building.
+                </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-bold mb-3">Are there any clothing-optional beaches on Taniti?</h3>
+                <p class="text-gray-700">
+                    No, there are no officially designated clothing-optional beaches on Taniti. 
+                    Modest beachwear is appreciated, especially when visiting beaches near local villages.
+                </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-bold mb-3">When is the best time to visit Taniti's beaches?</h3>
+                <p class="text-gray-700">
+                    The beaches are beautiful year-round, but the dry season (December-April) offers the most 
+                    consistent weather for beach activities. For fewer crowds, consider visiting in the shoulder 
+                    seasons (November or May). Early mornings and late afternoons generally have fewer visitors.
+                </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-bold mb-3">Can I have a beach bonfire or barbecue?</h3>
+                <p class="text-gray-700">
+                    Beach bonfires require a permit from the local authorities and are only allowed in designated areas. 
+                    Small portable barbecues are permitted on some beaches, but you must clean up completely afterward. 
+                    Check with your accommodation or the tourist office for current regulations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="bg-blue-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-white rounded-lg p-8 text-center shadow-sm">
+                <h2 class="text-2xl font-bold mb-4">Get Beach Updates</h2>
+                <p class="text-gray-700 mb-6">Subscribe to receive the latest information about beach conditions, events, and special offers.</p>
+                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition duration-300 whitespace-nowrap">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-blue-800 font-bold text-xl mb-4">LOGO</div>
+                    <p class="text-gray-600 max-w-xs">Experience the beauty and adventure of Taniti Island, your perfect tropical getaway in the Pacific.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-gray-800 font-semibold mb-3">Explore</h3>
+                        <ul class="text-gray-600">
+                            <li class="mb-2"><a href="home.html" class="hover:text-blue-800">About</a></li>
+                            <li class="mb-2"><a href="accommodations.html" class="hover:text-blue-800">Stay</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">Eat</a></li>
+                            <li class="mb-2"><a href="activities.html" class="hover:text-blue-800">Activities</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-800 font-semibold mb-3">Plan</h3>
+                        <ul class="text-gray-600">
+                            <li class="mb-2"><a href="transportation.html" class="hover:text-blue-800">Transportation</a></li>
+                            <li class="mb-2"><a href="weather-packing.html" class="hover:text-blue-800">Weather</a></li>
+                            <li class="mb-2"><a href="weather-packing.html" class="hover:text-blue-800">What to Pack</a></li>
+                            <li class="mb-2"><a href="weather-packing.html" class="hover:text-blue-800">Plan Your Trip</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-800 font-semibold mb-3">Beaches</h3>
+                        <ul class="text-gray-600">
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">Yellow Leaf Bay</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">Coral Cove</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">Sunset Point</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">Beach Activities</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-800 font-semibold mb-3">Contact</h3>
+                        <ul class="text-gray-600">
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">Email</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">Phone</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">FAQ</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-800">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-12 pt-8 text-sm text-gray-600 text-center">
+                © 2023 Taniti Tourism. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
